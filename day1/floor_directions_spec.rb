@@ -12,7 +12,7 @@ describe FloorDirections do
   end
 
   describe '#enter_basement' do
-    it "Finds when the basement is entered" do
+    it "returns the index of the instruction that enters the basement" do
       directions = FloorDirections.new "())(())"
       expect(directions.enter_basement).to equal 3
     end
